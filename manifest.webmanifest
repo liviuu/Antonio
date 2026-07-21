@@ -1,0 +1,20 @@
+{
+  "name": "Antonio — grile de admitere",
+  "short_name": "Antonio",
+  "id": "./",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1b6ec2",
+  "lang": "ro",
+  "prefer_related_applications": false,
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    }
+  ]
+}

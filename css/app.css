@@ -62,7 +62,7 @@ a, .btn-link {
 }
 
     .blazor-error-boundary::after {
-        content: "An error has occurred."
+        content: "A apărut o eroare."
     }
 
 .loading-progress {
@@ -100,4 +100,96 @@ a, .btn-link {
 
 code {
     color: #c02d76;
+}
+
+/* ---- Grile ------------------------------------------------------------- */
+/* Ținta e ecranul de telefon: variante mari, atingibile cu degetul, fără zoom. */
+
+.grila legend {
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.varianta {
+    display: flex;
+    align-items: flex-start;
+    gap: .25rem;
+    width: 100%;
+    padding: .7rem .8rem;
+    margin-bottom: .5rem;
+    border: 1px solid #dee2e6;
+    border-radius: .5rem;
+    line-height: 1.35;
+    cursor: pointer;
+}
+
+    .varianta:has(input:disabled) {
+        cursor: default;
+    }
+
+    .varianta .cheie {
+        font-weight: 600;
+        min-width: 1.4rem;
+    }
+
+    .varianta.ales {
+        border-color: #1b6ec2;
+        background: #eaf2fb;
+    }
+
+    .varianta.corect {
+        border-color: #198754;
+        background: #e6f4ec;
+    }
+
+    .varianta.gresit {
+        border-color: #dc3545;
+        background: #fbeaec;
+    }
+
+/* Afirmațiile CG stau deasupra variantelor și își arată adevărul după răspuns. */
+.afirmatii {
+    padding-left: 1.4rem;
+}
+
+    .afirmatii li {
+        margin-bottom: .4rem;
+        line-height: 1.35;
+    }
+
+        .afirmatii li.adevarat {
+            color: #146c43;
+        }
+
+        .afirmatii li.fals {
+            color: #b02a37;
+        }
+
+    .afirmatii .verdict {
+        margin-left: .4rem;
+        font-size: .75rem;
+        text-transform: uppercase;
+        letter-spacing: .03em;
+        opacity: .75;
+    }
+
+.explicatie {
+    padding: .8rem;
+    border-radius: .5rem;
+    border-left: 4px solid;
+    background: #f8f9fa;
+    line-height: 1.45;
+}
+
+    .explicatie.corect {
+        border-left-color: #198754;
+    }
+
+    .explicatie.gresit {
+        border-left-color: #dc3545;
+    }
+
+.scor {
+    font-size: 2rem;
+    font-weight: 600;
 }
