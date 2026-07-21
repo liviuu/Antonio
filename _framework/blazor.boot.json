@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "Antonio",
   "resources": {
-    "hash": "sha256-Joz5BvuHYCJ0r8H4PCMsWXjetK3DLpGhbRcSOl+3ArE=",
+    "hash": "sha256-zBD4pjoxyvlzrhQNzSMDwyh1T+oY6Bc15QKZM1bW6Rs=",
     "jsModuleNative": {
       "dotnet.native.8.0.29.o6rgz6kano.js": "sha256-JTswf4CBcNmmrTGm6DppxYNII8GVEmbA3iXD3bU1fcA="
     },
@@ -12,7 +12,7 @@
       "dotnet.native.wasm": "sha256-NkshPJDdD3pyLNk8xISpu+d919kQmPuAWT53EbVvE8I="
     },
     "assembly": {
-      "Antonio.wasm": "sha256-vHRqZUC8SEZ+Upv47qiLF8Cocqjj9Ug8EE6V+4+Z/N0=",
+      "Antonio.wasm": "sha256-AqAILJDH0zm7YtvpLycxAF2JyyhODikfExO9dHEUKXE=",
       "Microsoft.AspNetCore.Components.wasm": "sha256-keAhDzK4S+dfwX0Nt1FP9W7fbcXfQ8qQWdahGDa9AqE=",
       "Microsoft.AspNetCore.Components.Web.wasm": "sha256-44zIKR2DNCctPH2BCKpmzRAtV1dPmrthkNz2sr6MLPE=",
       "Microsoft.AspNetCore.Components.WebAssembly.wasm": "sha256-9FnCjsiyX9i3aNLKiXzh+eftdFggJDFiv0bi9Sr/m5o=",

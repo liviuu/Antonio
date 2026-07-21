@@ -105,91 +105,299 @@ code {
 /* ---- Grile ------------------------------------------------------------- */
 /* Ținta e ecranul de telefon: variante mari, atingibile cu degetul, fără zoom. */
 
-.grila legend {
+.grila {
+    --linie: #dee2e6;
+    --verde: #198754;
+    --verde-fundal: #e8f5ee;
+    --rosu: #dc3545;
+    --rosu-fundal: #fdecee;
+    --albastru: #1b6ec2;
+    --albastru-fundal: #eaf2fb;
+}
+
+.grila fieldset {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    min-width: 0;
+}
+
+.enunt {
+    font-size: 1.05rem;
     font-weight: 600;
-    line-height: 1.4;
+    line-height: 1.45;
+    margin-bottom: .9rem;
+    padding: 0;
 }
 
+/* Fiecare variantă e un <button>, nu o etichetă cu radio ascuns: butonul e cel
+   mai fiabil element de click din Blazor, iar `@onclick` se declanșează cert la
+   atingere. Grid, nu flex, cu trei coloane fixe (literă / text / verdict) care
+   rămân aliniate între variante. */
 .varianta {
-    display: flex;
-    align-items: flex-start;
-    gap: .25rem;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: start;
+    gap: .7rem;
     width: 100%;
-    padding: .7rem .8rem;
+    padding: .75rem .85rem;
     margin-bottom: .5rem;
-    border: 1px solid #dee2e6;
-    border-radius: .5rem;
-    line-height: 1.35;
+    border: 1px solid var(--linie);
+    border-radius: .6rem;
+    background: #fff;
+    /* Resetează stilul intrinsec de buton (font propriu, text centrat). */
+    font: inherit;
+    color: inherit;
+    text-align: left;
+    line-height: 1.45;
     cursor: pointer;
+    transition: border-color .12s ease, background-color .12s ease;
 }
 
-    .varianta:has(input:disabled) {
-        cursor: default;
+    .varianta:last-child {
+        margin-bottom: 0;
     }
 
     .varianta .cheie {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 1.75rem;
+        height: 1.75rem;
+        border-radius: 50%;
+        background: #f1f3f5;
+        color: #495057;
         font-weight: 600;
-        min-width: 1.4rem;
+        font-size: .875rem;
+        flex-shrink: 0;
+        transition: background-color .12s ease, color .12s ease;
     }
 
-    .varianta.ales {
-        border-color: #1b6ec2;
-        background: #eaf2fb;
+    .varianta:hover:not(:disabled) {
+        border-color: #adb5bd;
     }
+
+    .varianta:focus-visible {
+        outline: 2px solid var(--albastru);
+        outline-offset: 2px;
+    }
+
+    .varianta:disabled {
+        cursor: default;
+    }
+
+    .varianta.ales,
+    .varianta[aria-pressed=true]:not(.corect):not(.gresit) {
+        border-color: var(--albastru);
+        background: var(--albastru-fundal);
+        box-shadow: inset 0 0 0 1px var(--albastru);
+    }
+
+        .varianta.ales .cheie,
+        .varianta[aria-pressed=true]:not(.corect):not(.gresit) .cheie {
+            background: #fff;
+            color: var(--albastru);
+            box-shadow: inset 0 0 0 2px var(--albastru);
+        }
 
     .varianta.corect {
-        border-color: #198754;
-        background: #e6f4ec;
+        border-color: var(--verde);
+        background: var(--verde-fundal);
     }
+
+        .varianta.corect .cheie {
+            background: var(--verde);
+            color: #fff;
+        }
 
     .varianta.gresit {
-        border-color: #dc3545;
-        background: #fbeaec;
+        border-color: var(--rosu);
+        background: var(--rosu-fundal);
     }
 
-/* Afirmațiile CG stau deasupra variantelor și își arată adevărul după răspuns. */
+        .varianta.gresit .cheie {
+            background: var(--rosu);
+            color: #fff;
+        }
+
+    /* Verdictul stă în a treia coloană; când lipsește, coloana are lățime 0. */
+    .varianta::after {
+        content: "";
+        width: 1.25rem;
+        height: 1.25rem;
+        margin-top: .25rem;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    /* Selectia este randata si in DOM; pseudo-elementul ramane doar pentru
+       verdictul afisat dupa trimiterea raspunsului. */
+    .varianta.ales::after,
+    .varianta[aria-pressed=true]:not(.corect):not(.gresit)::after {
+        display: none;
+    }
+
+    .varianta .indicator-selectie {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 1.25rem;
+        height: 1.25rem;
+        margin-top: .25rem;
+        border-radius: 50%;
+        background: var(--albastru);
+        color: #fff;
+        font-size: .8rem;
+        font-weight: 700;
+        line-height: 1;
+    }
+
+    .varianta.corect::after {
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='%23198754'%3E%3Cpath d='M10 0a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm4.7 7.7-5.6 5.6a1 1 0 0 1-1.4 0L4.3 10.9a1 1 0 1 1 1.4-1.4l2.7 2.7 4.9-4.9a1 1 0 1 1 1.4 1.4z'/%3E%3C/svg%3E");
+    }
+
+    .varianta.gresit::after {
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='%23dc3545'%3E%3Cpath d='M10 0a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm3.5 12.1a1 1 0 0 1-1.4 1.4L10 11.4l-2.1 2.1a1 1 0 0 1-1.4-1.4L8.6 10 6.5 7.9a1 1 0 0 1 1.4-1.4L10 8.6l2.1-2.1a1 1 0 0 1 1.4 1.4L11.4 10z'/%3E%3C/svg%3E");
+    }
+
+/* Afirmațiile CG: numerotate cu bulină proprie, ca să nu se confunde cu
+   literele variantelor de dedesubt. */
 .afirmatii {
-    padding-left: 1.4rem;
+    list-style: none;
+    counter-reset: afirmatie;
+    padding: 0;
+    margin: 0 0 1rem;
 }
 
     .afirmatii li {
-        margin-bottom: .4rem;
-        line-height: 1.35;
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        align-items: start;
+        gap: .7rem;
+        padding: .5rem .85rem .5rem 0;
+        line-height: 1.45;
     }
 
-        .afirmatii li.adevarat {
-            color: #146c43;
+        .afirmatii li::before {
+            counter-increment: afirmatie;
+            content: counter(afirmatie);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 1.75rem;
+            height: 1.75rem;
+            border-radius: .4rem;
+            background: #f1f3f5;
+            color: #495057;
+            font-weight: 600;
+            font-size: .875rem;
         }
 
-        .afirmatii li.fals {
-            color: #b02a37;
+        .afirmatii li.adevarat::before {
+            background: var(--verde-fundal);
+            color: var(--verde);
+        }
+
+        .afirmatii li.fals::before {
+            background: var(--rosu-fundal);
+            color: var(--rosu);
         }
 
     .afirmatii .verdict {
-        margin-left: .4rem;
-        font-size: .75rem;
+        font-size: .7rem;
+        font-weight: 600;
         text-transform: uppercase;
-        letter-spacing: .03em;
-        opacity: .75;
+        letter-spacing: .04em;
+        padding: .15rem .45rem;
+        border-radius: .25rem;
+        white-space: nowrap;
+        margin-top: .15rem;
     }
 
+    .afirmatii li.adevarat .verdict {
+        background: var(--verde-fundal);
+        color: var(--verde);
+    }
+
+    .afirmatii li.fals .verdict {
+        background: var(--rosu-fundal);
+        color: var(--rosu);
+    }
+
+.separator-variante {
+    border-top: 1px solid #e9ecef;
+    margin: 0 0 .85rem;
+}
+
+/* ---- Explicație -------------------------------------------------------- */
+
 .explicatie {
-    padding: .8rem;
-    border-radius: .5rem;
-    border-left: 4px solid;
-    background: #f8f9fa;
-    line-height: 1.45;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: .75rem;
+    padding: .9rem 1rem;
+    border-radius: .6rem;
+    border: 1px solid;
+    line-height: 1.5;
 }
 
     .explicatie.corect {
-        border-left-color: #198754;
+        border-color: #a3cfbb;
+        background: #e8f5ee;
     }
 
     .explicatie.gresit {
-        border-left-color: #dc3545;
+        border-color: #f1aeb5;
+        background: #fdecee;
     }
 
+    .explicatie .pictograma {
+        width: 1.4rem;
+        height: 1.4rem;
+        margin-top: .1rem;
+    }
+
+    .explicatie .titlu {
+        font-weight: 600;
+        margin-bottom: .3rem;
+    }
+
+    .explicatie.corect .titlu {
+        color: #146c43;
+    }
+
+    .explicatie.gresit .titlu {
+        color: #b02a37;
+    }
+
+    .explicatie .sursa {
+        font-size: .8rem;
+        color: #6c757d;
+        margin-top: .5rem;
+    }
+
+/* ---- Rezultate --------------------------------------------------------- */
+
 .scor {
-    font-size: 2rem;
+    display: flex;
+    align-items: baseline;
+    gap: .4rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+    .scor .din {
+        font-size: 1.1rem;
+        font-weight: 400;
+        color: #6c757d;
+    }
+
+.capitol-titlu {
     font-weight: 600;
+}
+
+.antet-sesiune {
+    font-size: .8rem;
+    color: #6c757d;
 }
