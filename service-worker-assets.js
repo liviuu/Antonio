@@ -21,11 +21,11 @@
       "url": "_framework\/dotnet.runtime.8.0.29.dr4p1rz6lj.js"
     },
     {
-      "hash": "sha256-NR4pCnx62Hx2mo2j82WooN47OsBCzOEdwImZRUE6\/s8=",
+      "hash": "sha256-+LRIY5pidCM4Y5CcMwBF3egiMCSkcvYT4sZZIMM1zRk=",
       "url": "_framework\/blazor.boot.json"
     },
     {
-      "hash": "sha256-r6mjbI23SYBmyncFHjA8xTlSimx2UtnlVsPzFFDboxU=",
+      "hash": "sha256-vHRqZUC8SEZ+Upv47qiLF8Cocqjj9Ug8EE6V+4+Z\/N0=",
       "url": "_framework\/Antonio.wasm"
     },
     {
@@ -173,7 +173,7 @@
       "url": "css\/bootstrap\/bootstrap.min.css.map"
     },
     {
-      "hash": "sha256-3MN6DFQS6xiVKgB3h8SIvzQ4b5viq1faAqDwPl38C0A=",
+      "hash": "sha256-8AORQDztgoeBRrq6R6fThiV55doOB8xTQzxCtpxN6cg=",
       "url": "data\/biologie.json"
     },
     {
@@ -193,5 +193,5 @@
       "url": "manifest.webmanifest"
     }
   ],
-  "version": "gagis70\/"
+  "version": "j92XomfZ"
 };

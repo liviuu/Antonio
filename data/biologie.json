@@ -9,6 +9,7 @@
    "titlu": "Alcătuirea corpului uman",
    "items": 81,
    "rejected": 1,
+   "quarantined": 0,
    "cs": 24,
    "cg": 57,
    "gaps": 5,
@@ -38,10 +39,11 @@
   {
    "id": "bio02",
    "titlu": "Sistemul nervos",
-   "items": 93,
+   "items": 90,
    "rejected": 1,
-   "cs": 27,
-   "cg": 66,
+   "quarantined": 3,
+   "cs": 26,
+   "cg": 64,
    "gaps": 11,
    "sectiuni": [
     {
@@ -52,7 +54,7 @@
     {
      "id": "bio02.maduva",
      "titlu": "Măduva spinării",
-     "items": 31
+     "items": 29
     },
     {
      "id": "bio02.encefal",
@@ -62,17 +64,18 @@
     {
      "id": "bio02.snv",
      "titlu": "Sistemul nervos vegetativ",
-     "items": 16
+     "items": 15
     }
    ]
   },
   {
    "id": "bio03",
    "titlu": "Analizatorii",
-   "items": 77,
+   "items": 76,
    "rejected": 0,
+   "quarantined": 1,
    "cs": 22,
-   "cg": 55,
+   "cg": 54,
    "gaps": 12,
    "sectiuni": [
     {
@@ -88,7 +91,7 @@
     {
      "id": "bio03.olfactiv",
      "titlu": "Analizatorul olfactiv",
-     "items": 7
+     "items": 6
     },
     {
      "id": "bio03.gustativ",
@@ -112,6 +115,7 @@
    "titlu": "Glandele endocrine",
    "items": 111,
    "rejected": 0,
+   "quarantined": 0,
    "cs": 32,
    "cg": 79,
    "gaps": 8,
@@ -158,6 +162,7 @@
    "titlu": "Mișcarea",
    "items": 60,
    "rejected": 0,
+   "quarantined": 0,
    "cs": 17,
    "cg": 43,
    "gaps": 0,
@@ -5330,39 +5335,6 @@
    "raspuns": "C"
   },
   {
-   "id": "bio02.maduva.cs.7d22e41d",
-   "sectionId": "bio02.maduva",
-   "tip": "CS",
-   "enunt": "Despre substanța cenușie medulară este corectă afirmația:",
-   "explicatie": "Cornul lateral, vizibil cervical inferior, toracal și lombar superior, conține neuronii vegetativi simpatici preganglionari. Coarnele anterioare, late și scurte, adăpostesc dispozitivul somatomotor, iar cele posterioare deutoneuronii căilor senzitive.",
-   "dificultate": "grea",
-   "sursa": "Măduva spinării",
-   "pagina": 19,
-   "optiuni": [
-    {
-     "cheie": "A",
-     "text": "protoneuronul căilor senzitive stă în cornul posterior"
-    },
-    {
-     "cheie": "B",
-     "text": "comisura cenușie adăpostește canalul medular central"
-    },
-    {
-     "cheie": "C",
-     "text": "cornul lateral adăpostește neuroni preganglionari"
-    },
-    {
-     "cheie": "D",
-     "text": "coarnele anterioare sunt mai înguste și mai lungi"
-    },
-    {
-     "cheie": "E",
-     "text": "substanța reticulată se află în cornul anterior"
-    }
-   ],
-   "raspuns": "C"
-  },
-  {
    "id": "bio02.maduva.cg.83af0fee",
    "sectionId": "bio02.maduva",
    "tip": "CG",
@@ -6296,61 +6268,6 @@
     }
    ],
    "raspuns": "C"
-  },
-  {
-   "id": "bio02.maduva.cg.e3bd1f42",
-   "sectionId": "bio02.maduva",
-   "tip": "CG",
-   "enunt": "Despre sistemul extrapiramidal sunt adevărate afirmațiile:",
-   "explicatie": "Nucleii bazali trimit fibre strionigrice, striorubice și strioreticulate spre nucleii mezencefalici; de aici pleacă fasciculele nigrospinale, rubrospinale și reticulospinale, care, împreună cu cele bulbare, se termină la motoneuronii din cornul anterior.",
-   "dificultate": "grea",
-   "sursa": "Măduva spinării",
-   "pagina": 23,
-   "afirmatii": [
-    {
-     "nr": 1,
-     "text": "fibrele strionigrice pleacă din nucleul roșu spre striat",
-     "adevarat": false
-    },
-    {
-     "nr": 2,
-     "text": "talamusul dă naștere fasciculelor nigrospinale",
-     "adevarat": false
-    },
-    {
-     "nr": 3,
-     "text": "formația reticulată mezencefalică este releu al căii",
-     "adevarat": false
-    },
-    {
-     "nr": 4,
-     "text": "toate fasciculele ajung la neuronii din cornul anterior",
-     "adevarat": true
-    }
-   ],
-   "optiuni": [
-    {
-     "cheie": "A",
-     "text": "numai soluțiile 1, 2 și 3 sunt corecte"
-    },
-    {
-     "cheie": "B",
-     "text": "numai soluțiile 1 și 3 sunt corecte"
-    },
-    {
-     "cheie": "C",
-     "text": "numai soluțiile 2 și 4 sunt corecte"
-    },
-    {
-     "cheie": "D",
-     "text": "numai soluția 4 este corectă"
-    },
-    {
-     "cheie": "E",
-     "text": "toate cele patru soluții sunt corecte sau sunt false"
-    }
-   ],
-   "raspuns": "D"
   },
   {
    "id": "bio02.maduva.cs.4ed47096",
@@ -8267,61 +8184,6 @@
    "raspuns": "A"
   },
   {
-   "id": "bio02.snv.cg.d0ef9fab",
-   "sectionId": "bio02.snv",
-   "tip": "CG",
-   "enunt": "Despre efectele vegetative asupra glandelor sunt adevărate afirmațiile:",
-   "explicatie": "Simpaticul determină o salivă vâscoasă și stimulează secreția hormonală a medulosuprarenalei, în timp ce parasimpaticul dă o salivă apoasă și crește secrețiile gastrice și intestinale.",
-   "dificultate": "medie",
-   "sursa": "Sistemul nervos vegetativ",
-   "pagina": 35,
-   "afirmatii": [
-    {
-     "nr": 1,
-     "text": "parasimpaticul determină secreție salivară vâscoasă",
-     "adevarat": false
-    },
-    {
-     "nr": 2,
-     "text": "simpaticul stimulează secreția hormonală suprarenală",
-     "adevarat": true
-    },
-    {
-     "nr": 3,
-     "text": "parasimpaticul nu are efect asupra medulosuprarenalei",
-     "adevarat": false
-    },
-    {
-     "nr": 4,
-     "text": "parasimpaticul crește secreția glandelor gastrice",
-     "adevarat": true
-    }
-   ],
-   "optiuni": [
-    {
-     "cheie": "A",
-     "text": "numai soluțiile 1, 2 și 3 sunt corecte"
-    },
-    {
-     "cheie": "B",
-     "text": "numai soluțiile 1 și 3 sunt corecte"
-    },
-    {
-     "cheie": "C",
-     "text": "numai soluțiile 2 și 4 sunt corecte"
-    },
-    {
-     "cheie": "D",
-     "text": "numai soluția 4 este corectă"
-    },
-    {
-     "cheie": "E",
-     "text": "toate cele patru soluții sunt corecte sau sunt false"
-    }
-   ],
-   "raspuns": "C"
-  },
-  {
    "id": "bio02.snv.cg.1f47a359",
    "sectionId": "bio02.snv",
    "tip": "CG",
@@ -9805,61 +9667,6 @@
     }
    ],
    "raspuns": "E"
-  },
-  {
-   "id": "bio03.olfactiv.cg.63035469",
-   "sectionId": "bio03.olfactiv",
-   "tip": "CG",
-   "enunt": "Despre calea analizatorului olfactiv sunt adevărate afirmațiile:",
-   "explicatie": "Axonii celulelor olfactive formează tractul olfactiv, care se proiectează în girul hipocampic și nucleul amigdalian, fără releu talamic.",
-   "dificultate": "medie",
-   "sursa": "Analizatorul olfactiv",
-   "pagina": 42,
-   "afirmatii": [
-    {
-     "nr": 1,
-     "text": "face sinapsă obligatorie în talamus",
-     "adevarat": false
-    },
-    {
-     "nr": 2,
-     "text": "se proiectează și pe nucleul amigdalian",
-     "adevarat": true
-    },
-    {
-     "nr": 3,
-     "text": "tractul olfactiv pleacă din lobul temporal",
-     "adevarat": false
-    },
-    {
-     "nr": 4,
-     "text": "axonii receptorilor formează tractul olfactiv",
-     "adevarat": true
-    }
-   ],
-   "optiuni": [
-    {
-     "cheie": "A",
-     "text": "numai soluțiile 1, 2 și 3 sunt corecte"
-    },
-    {
-     "cheie": "B",
-     "text": "numai soluțiile 1 și 3 sunt corecte"
-    },
-    {
-     "cheie": "C",
-     "text": "numai soluțiile 2 și 4 sunt corecte"
-    },
-    {
-     "cheie": "D",
-     "text": "numai soluția 4 este corectă"
-    },
-    {
-     "cheie": "E",
-     "text": "toate cele patru soluții sunt corecte sau sunt false"
-    }
-   ],
-   "raspuns": "C"
   },
   {
    "id": "bio03.olfactiv.cg.6266c137",
