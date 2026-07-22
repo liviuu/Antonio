@@ -7,11 +7,11 @@
   {
    "id": "bio01",
    "titlu": "Alcătuirea corpului uman",
-   "items": 81,
+   "items": 87,
    "rejected": 1,
    "quarantined": 0,
-   "cs": 24,
-   "cg": 57,
+   "cs": 27,
+   "cg": 60,
    "gaps": 5,
    "sectiuni": [
     {
@@ -33,17 +33,22 @@
      "id": "bio01.tesuturi",
      "titlu": "Țesuturile",
      "items": 14
+    },
+    {
+     "id": "bio01.greu",
+     "titlu": "⚡ Greu (pilot)",
+     "items": 6
     }
    ]
   },
   {
    "id": "bio02",
    "titlu": "Sistemul nervos",
-   "items": 90,
+   "items": 96,
    "rejected": 1,
    "quarantined": 3,
-   "cs": 26,
-   "cg": 64,
+   "cs": 29,
+   "cg": 67,
    "gaps": 11,
    "sectiuni": [
     {
@@ -65,17 +70,22 @@
      "id": "bio02.snv",
      "titlu": "Sistemul nervos vegetativ",
      "items": 15
+    },
+    {
+     "id": "bio02.greu",
+     "titlu": "⚡ Greu (pilot)",
+     "items": 6
     }
    ]
   },
   {
    "id": "bio03",
    "titlu": "Analizatorii",
-   "items": 76,
+   "items": 82,
    "rejected": 0,
    "quarantined": 1,
-   "cs": 22,
-   "cg": 54,
+   "cs": 25,
+   "cg": 57,
    "gaps": 12,
    "sectiuni": [
     {
@@ -107,6 +117,11 @@
      "id": "bio03.acustico",
      "titlu": "Analizatorul acustico-vestibular",
      "items": 22
+    },
+    {
+     "id": "bio03.greu",
+     "titlu": "⚡ Greu (pilot)",
+     "items": 6
     }
    ]
   },
@@ -20513,6 +20528,816 @@
     }
    ],
    "raspuns": "E"
+  },
+  {
+   "id": "bio02.hard.cs.001",
+   "sectionId": "bio02.greu",
+   "tip": "CS",
+   "marcaj": "hard",
+   "enunt": "Impulsurile termice și dureroase culese de la nivelul membrului inferior drept se proiectează, în final:",
+   "explicatie": "Calea sensibilității termice și dureroase are protoneuronul în ganglionul spinal, deutoneuronul în cornul posterior, iar axonul acestuia trece în cordonul lateral OPUS (fasciculul spinotalamic lateral). Al III-lea neuron este talamic contralateral, cu proiecție în aria somestezică I. Un stimul din dreapta se proiectează deci în emisfera stângă. Distractorii folosesc structuri reale (spinotalamic anterior, lemnisc medial, talamus), dar de pe alte căi sau de partea greșită.",
+   "dificultate": "grea",
+   "sursa": "Măduva spinării",
+   "pagina": 20,
+   "raspuns": "C",
+   "optiuni": [
+    {
+     "cheie": "A",
+     "text": "prin fasciculul spinotalamic anterior de aceeași parte"
+    },
+    {
+     "cheie": "B",
+     "text": "prin lemniscul medial, după încrucișarea din bulb"
+    },
+    {
+     "cheie": "C",
+     "text": "în aria somestezică I din emisfera cerebrală stângă"
+    },
+    {
+     "cheie": "D",
+     "text": "în aria somestezică I din emisfera cerebrală dreaptă"
+    },
+    {
+     "cheie": "E",
+     "text": "în talamusul drept, sediul celui de-al III-lea neuron"
+    }
+   ]
+  },
+  {
+   "id": "bio02.hard.cs.002",
+   "sectionId": "bio02.greu",
+   "tip": "CS",
+   "marcaj": "hard",
+   "enunt": "Despre mușchiul care asigură vederea de aproape prin bombarea cristalinului este adevărat că:",
+   "explicatie": "Mușchiul ciliar (fibrele circulare) este organul activ al acomodării: contracția sa relaxează ligamentul suspensor și lasă cristalinul să se bombeze pentru vederea de aproape. Este un mușchi neted, inervat parasimpatic din nucleul accesor (Edinger-Westphal) al nervului III. Distractorii pun structuri reale — nervul IV, nucleul motor al III, mușchiul dilatator — în context greșit.",
+   "dificultate": "grea",
+   "sursa": "Encefalul",
+   "pagina": 27,
+   "raspuns": "B",
+   "optiuni": [
+    {
+     "cheie": "A",
+     "text": "este inervat motor de nervul IV, cu nucleul în mezencefal"
+    },
+    {
+     "cheie": "B",
+     "text": "primește fibre parasimpatice din nucleul accesor al nervului III"
+    },
+    {
+     "cheie": "C",
+     "text": "este un mușchi striat aflat sub control voluntar"
+    },
+    {
+     "cheie": "D",
+     "text": "provine din nucleul motor al oculomotorului din mezencefal"
+    },
+    {
+     "cheie": "E",
+     "text": "prin contracția sa determină midriază"
+    }
+   ]
+  },
+  {
+   "id": "bio02.hard.cs.003",
+   "sectionId": "bio02.greu",
+   "tip": "CS",
+   "marcaj": "hard",
+   "enunt": "Sunt încadrați printre chemoreceptori următorii, cu excepția:",
+   "explicatie": "Manualul încadrează printre chemoreceptori mugurii gustativi, epiteliul olfactiv, corpii carotidieni și aortici, precum și nociceptorii. Fusurile neuromusculare sunt proprioceptori și fac excepția. Fiecare distractor este un chemoreceptor real din enumerarea manualului.",
+   "dificultate": "grea",
+   "sursa": "Sistemul nervos — generalități",
+   "pagina": 18,
+   "raspuns": "E",
+   "optiuni": [
+    {
+     "cheie": "A",
+     "text": "mugurii gustativi"
+    },
+    {
+     "cheie": "B",
+     "text": "epiteliul olfactiv"
+    },
+    {
+     "cheie": "C",
+     "text": "corpii carotidieni"
+    },
+    {
+     "cheie": "D",
+     "text": "nociceptorii cutanați"
+    },
+    {
+     "cheie": "E",
+     "text": "fusurile neuromusculare"
+    }
+   ]
+  },
+  {
+   "id": "bio02.hard.cg.001",
+   "sectionId": "bio02.greu",
+   "tip": "CG",
+   "marcaj": "hard",
+   "enunt": "Referitor la nervii cranieni cu nuclei în bulb sunt adevărate afirmațiile:",
+   "explicatie": "Nucleul ambiguu (IX, X, rădăcina bulbară a XI), șanțul retroolivar (originea aparentă IX, X) și nucleul dorsal al vagului sunt corecte. Afirmația 4 mută nervul XII în șanțul retroolivar, deși originea sa aparentă este în șanțul preolivar. Vectorul {1,2,3} corespunde literei A.",
+   "dificultate": "grea",
+   "sursa": "Encefalul",
+   "pagina": 28,
+   "raspuns": "A",
+   "optiuni": [
+    {
+     "cheie": "A",
+     "text": "numai soluțiile 1, 2 și 3 sunt corecte"
+    },
+    {
+     "cheie": "B",
+     "text": "numai soluțiile 1 și 3 sunt corecte"
+    },
+    {
+     "cheie": "C",
+     "text": "numai soluțiile 2 și 4 sunt corecte"
+    },
+    {
+     "cheie": "D",
+     "text": "numai soluția 4 este corectă"
+    },
+    {
+     "cheie": "E",
+     "text": "toate cele patru soluții sunt corecte sau sunt false"
+    }
+   ],
+   "afirmatii": [
+    {
+     "nr": 1,
+     "text": "originea reală a fibrelor motorii ale nervilor IX, X și a rădăcinii bulbare a nervului XI se află în nucleul ambiguu",
+     "adevarat": true
+    },
+    {
+     "nr": 2,
+     "text": "originea aparentă a nervilor IX și X se află în șanțul retroolivar",
+     "adevarat": true
+    },
+    {
+     "nr": 3,
+     "text": "fibrele parasimpatice ale nervului X provin din nucleul dorsal al vagului",
+     "adevarat": true
+    },
+    {
+     "nr": 4,
+     "text": "nervul XII are originea aparentă în șanțul retroolivar",
+     "adevarat": false
+    }
+   ]
+  },
+  {
+   "id": "bio02.hard.cg.002",
+   "sectionId": "bio02.greu",
+   "tip": "CG",
+   "marcaj": "hard",
+   "enunt": "Despre fibrele și mediatorii sistemului nervos vegetativ sunt adevărate afirmațiile:",
+   "explicatie": "Corecte sunt afirmațiile 2 (transmisie ganglionară colinergică la ambele sisteme) și 4 (medulosuprarenala, ganglion simpatic modificat, eliberează adrenalină). Afirmația 1 inversează mediatorul parasimpatic, iar afirmația 3 aplică parasimpaticului raportul de lungimi al simpaticului. Vectorul {2,4} corespunde literei C.",
+   "dificultate": "grea",
+   "sursa": "Sistemul nervos vegetativ",
+   "pagina": 33,
+   "raspuns": "C",
+   "optiuni": [
+    {
+     "cheie": "A",
+     "text": "numai soluțiile 1, 2 și 3 sunt corecte"
+    },
+    {
+     "cheie": "B",
+     "text": "numai soluțiile 1 și 3 sunt corecte"
+    },
+    {
+     "cheie": "C",
+     "text": "numai soluțiile 2 și 4 sunt corecte"
+    },
+    {
+     "cheie": "D",
+     "text": "numai soluția 4 este corectă"
+    },
+    {
+     "cheie": "E",
+     "text": "toate cele patru soluții sunt corecte sau sunt false"
+    }
+   ],
+   "afirmatii": [
+    {
+     "nr": 1,
+     "text": "fibra postganglionară parasimpatică eliberează noradrenalină",
+     "adevarat": false
+    },
+    {
+     "nr": 2,
+     "text": "la ambele sisteme, între fibra preganglionară și cea postganglionară se eliberează acetilcolină",
+     "adevarat": true
+    },
+    {
+     "nr": 3,
+     "text": "la parasimpatic, fibra preganglionară este scurtă, iar cea postganglionară este lungă",
+     "adevarat": false
+    },
+    {
+     "nr": 4,
+     "text": "medulosuprarenala eliberează adrenalină sub acțiunea fibrelor simpatice preganglionare",
+     "adevarat": true
+    }
+   ]
+  },
+  {
+   "id": "bio02.hard.cg.003",
+   "sectionId": "bio02.greu",
+   "tip": "CG",
+   "marcaj": "hard",
+   "enunt": "Referitor la nivelul la care se încrucișează căile nervoase medulare sunt adevărate afirmațiile:",
+   "explicatie": "Corecte sunt afirmațiile 1 (spinotalamic lateral — încrucișare medulară) și 3 (piramidal — 75 % decusație bulbară). Afirmația 2 mută încrucișarea kinestezică în măduvă (ea are loc în bulb), iar afirmația 4 declară încrucișat spinocerebelosul dorsal, care este direct. Vectorul {1,3} corespunde literei B.",
+   "dificultate": "grea",
+   "sursa": "Măduva spinării",
+   "pagina": 22,
+   "raspuns": "B",
+   "optiuni": [
+    {
+     "cheie": "A",
+     "text": "numai soluțiile 1, 2 și 3 sunt corecte"
+    },
+    {
+     "cheie": "B",
+     "text": "numai soluțiile 1 și 3 sunt corecte"
+    },
+    {
+     "cheie": "C",
+     "text": "numai soluțiile 2 și 4 sunt corecte"
+    },
+    {
+     "cheie": "D",
+     "text": "numai soluția 4 este corectă"
+    },
+    {
+     "cheie": "E",
+     "text": "toate cele patru soluții sunt corecte sau sunt false"
+    }
+   ],
+   "afirmatii": [
+    {
+     "nr": 1,
+     "text": "fasciculul spinotalamic lateral se încrucișează la nivelul măduvei",
+     "adevarat": true
+    },
+    {
+     "nr": 2,
+     "text": "sensibilitatea kinestezică se încrucișează la nivelul măduvei, formând lemniscul medial",
+     "adevarat": false
+    },
+    {
+     "nr": 3,
+     "text": "aproximativ 75 % din fibrele fasciculului piramidal se încrucișează în bulb, formând corticospinalul lateral",
+     "adevarat": true
+    },
+    {
+     "nr": 4,
+     "text": "fasciculul spinocerebelos dorsal se încrucișează în bulb înainte de a ajunge la cerebel",
+     "adevarat": false
+    }
+   ]
+  },
+  {
+   "id": "bio03.hard.cs.001",
+   "sectionId": "bio03.greu",
+   "tip": "CS",
+   "marcaj": "hard",
+   "enunt": "Se proiectează în cortexul vizual din emisfera cerebrală stângă:",
+   "explicatie": "În emisfera stângă se proiectează fibrele temporale ale ochiului stâng (necrucișate) și fibrele nazale ale ochiului drept (încrucișate în chiasmă). Distractorii combină regula încrucișării cu structuri reale plasate greșit: câmp temporal drept (necrucișat), corp geniculat medial (cale acustică) și celulele bipolare (neuronul I, care nu ajunge la cortex).",
+   "dificultate": "grea",
+   "sursa": "Analizatorul vizual",
+   "pagina": 47,
+   "raspuns": "D",
+   "optiuni": [
+    {
+     "cheie": "A",
+     "text": "fibrele plecate din câmpul temporal al retinei ochiului drept"
+    },
+    {
+     "cheie": "B",
+     "text": "radiațiile optice provenite din corpul geniculat medial stâng"
+    },
+    {
+     "cheie": "C",
+     "text": "axonii celulelor bipolare din retina ochiului stâng"
+    },
+    {
+     "cheie": "D",
+     "text": "fibrele plecate din câmpul nazal al retinei ochiului drept"
+    },
+    {
+     "cheie": "E",
+     "text": "fibrele plecate din câmpul nazal al retinei ochiului stâng"
+    }
+   ]
+  },
+  {
+   "id": "bio03.hard.cs.002",
+   "sectionId": "bio03.greu",
+   "tip": "CS",
+   "marcaj": "hard",
+   "enunt": "Referitor la adaptarea receptorilor este corectă afirmația:",
+   "explicatie": "Receptorii fazici se adaptează rapid (exemplu: olfactivul), cei tonici lent sau deloc (exemplu: vizualul). Vater–Pacini au adaptare foarte rapidă, algoreceptorii aproape deloc, iar receptorii pentru rece sunt mai numeroși decât cei pentru cald. Fiecare distractor inversează un fapt exact din manual.",
+   "dificultate": "grea",
+   "sursa": "Analizatorul cutanat",
+   "pagina": 38,
+   "raspuns": "A",
+   "optiuni": [
+    {
+     "cheie": "A",
+     "text": "receptorii olfactivi sunt receptori fazici"
+    },
+    {
+     "cheie": "B",
+     "text": "corpusculii Vater–Pacini au adaptare lentă"
+    },
+    {
+     "cheie": "C",
+     "text": "receptorii pentru durere se adaptează rapid"
+    },
+    {
+     "cheie": "D",
+     "text": "receptorul vizual este un receptor fazic"
+    },
+    {
+     "cheie": "E",
+     "text": "receptorii pentru rece sunt mai puțin numeroși decât cei pentru cald"
+    }
+   ]
+  },
+  {
+   "id": "bio03.hard.cs.003",
+   "sectionId": "bio03.greu",
+   "tip": "CS",
+   "marcaj": "hard",
+   "enunt": "Despre viciile de refracție sunt corecte afirmațiile, cu excepția:",
+   "explicatie": "Emetropul are retina la 17 mm; hipermetropul la mai puțin de 17 mm (lentile convergente); miopul la peste 17 mm (lentile divergente); astigmatismul se corectează cu lentile cilindrice. Excepția este afirmația E, care atribuie miopului distanța hipermetropului.",
+   "dificultate": "grea",
+   "sursa": "Analizatorul vizual",
+   "pagina": 46,
+   "raspuns": "E",
+   "optiuni": [
+    {
+     "cheie": "A",
+     "text": "hipermetropul are retina la mai puțin de 17 mm de centrul optic"
+    },
+    {
+     "cheie": "B",
+     "text": "miopia se corectează cu lentile divergente"
+    },
+    {
+     "cheie": "C",
+     "text": "astigmatismul se corectează cu lentile cilindrice"
+    },
+    {
+     "cheie": "D",
+     "text": "hipermetropia se corectează cu lentile convergente"
+    },
+    {
+     "cheie": "E",
+     "text": "miopul are retina la mai puțin de 17 mm de centrul optic"
+    }
+   ]
+  },
+  {
+   "id": "bio03.hard.cg.001",
+   "sectionId": "bio03.greu",
+   "tip": "CG",
+   "marcaj": "hard",
+   "enunt": "Conțin endolimfă următoarele structuri:",
+   "explicatie": "Endolimfa umple labirintul membranos: canalul cohlear, utricula, sacula, canalele semicirculare membranoase. Perilimfa se află între osul temporal și labirintul membranos și în rampele vestibulară și timpanică. Afirmațiile 2 și 4 sunt corecte; vectorul {2,4} corespunde literei C.",
+   "dificultate": "grea",
+   "sursa": "Analizatorul acustico-vestibular",
+   "pagina": 49,
+   "raspuns": "C",
+   "optiuni": [
+    {
+     "cheie": "A",
+     "text": "numai soluțiile 1, 2 și 3 sunt corecte"
+    },
+    {
+     "cheie": "B",
+     "text": "numai soluțiile 1 și 3 sunt corecte"
+    },
+    {
+     "cheie": "C",
+     "text": "numai soluțiile 2 și 4 sunt corecte"
+    },
+    {
+     "cheie": "D",
+     "text": "numai soluția 4 este corectă"
+    },
+    {
+     "cheie": "E",
+     "text": "toate cele patru soluții sunt corecte sau sunt false"
+    }
+   ],
+   "afirmatii": [
+    {
+     "nr": 1,
+     "text": "rampa vestibulară",
+     "adevarat": false
+    },
+    {
+     "nr": 2,
+     "text": "canalul cohlear (melcul membranos)",
+     "adevarat": true
+    },
+    {
+     "nr": 3,
+     "text": "rampa timpanică",
+     "adevarat": false
+    },
+    {
+     "nr": 4,
+     "text": "utricula și sacula",
+     "adevarat": true
+    }
+   ]
+  },
+  {
+   "id": "bio03.hard.cg.002",
+   "sectionId": "bio03.greu",
+   "tip": "CG",
+   "marcaj": "hard",
+   "enunt": "Despre calea acustică sunt adevărate afirmațiile:",
+   "explicatie": "Calea acustică: neuron I în ganglionul spiral Corti, neuron II în nucleii cohleari pontini (axon încrucișat), neuron III în coliculul inferior, neuron IV în corpul geniculat medial, proiecție în girul temporal superior. Afirmația 4 mută corpul geniculat medial la al III-lea neuron. Vectorul {1,2,3} corespunde literei A.",
+   "dificultate": "grea",
+   "sursa": "Analizatorul acustico-vestibular",
+   "pagina": 50,
+   "raspuns": "A",
+   "optiuni": [
+    {
+     "cheie": "A",
+     "text": "numai soluțiile 1, 2 și 3 sunt corecte"
+    },
+    {
+     "cheie": "B",
+     "text": "numai soluțiile 1 și 3 sunt corecte"
+    },
+    {
+     "cheie": "C",
+     "text": "numai soluțiile 2 și 4 sunt corecte"
+    },
+    {
+     "cheie": "D",
+     "text": "numai soluția 4 este corectă"
+    },
+    {
+     "cheie": "E",
+     "text": "toate cele patru soluții sunt corecte sau sunt false"
+    }
+   ],
+   "afirmatii": [
+    {
+     "nr": 1,
+     "text": "neuronul I se află în ganglionul spiral Corti",
+     "adevarat": true
+    },
+    {
+     "nr": 2,
+     "text": "neuronul al II-lea se află în nucleii cohleari din punte, iar axonul său se încrucișează",
+     "adevarat": true
+    },
+    {
+     "nr": 3,
+     "text": "proiecția corticală se face în girul temporal superior",
+     "adevarat": true
+    },
+    {
+     "nr": 4,
+     "text": "al III-lea neuron al căii acustice se află în corpul geniculat medial",
+     "adevarat": false
+    }
+   ]
+  },
+  {
+   "id": "bio03.hard.cg.003",
+   "sectionId": "bio03.greu",
+   "tip": "CG",
+   "marcaj": "hard",
+   "enunt": "Referitor la receptorii vestibulari sunt adevărate afirmațiile:",
+   "explicatie": "Maculele (utriculă, saculă) au cilii în membrana otolitică cu otolite de carbonat de calciu și magneziu; crestele ampulare se află în ampulele canalelor semicirculare; toți receptorii vestibulari sunt inervați din ganglionul Scarpa. Afirmațiile 1 și 3 sunt corecte; vectorul {1,3} corespunde literei B.",
+   "dificultate": "grea",
+   "sursa": "Analizatorul acustico-vestibular",
+   "pagina": 50,
+   "raspuns": "B",
+   "optiuni": [
+    {
+     "cheie": "A",
+     "text": "numai soluțiile 1, 2 și 3 sunt corecte"
+    },
+    {
+     "cheie": "B",
+     "text": "numai soluțiile 1 și 3 sunt corecte"
+    },
+    {
+     "cheie": "C",
+     "text": "numai soluțiile 2 și 4 sunt corecte"
+    },
+    {
+     "cheie": "D",
+     "text": "numai soluția 4 este corectă"
+    },
+    {
+     "cheie": "E",
+     "text": "toate cele patru soluții sunt corecte sau sunt false"
+    }
+   ],
+   "afirmatii": [
+    {
+     "nr": 1,
+     "text": "cilii celulelor din maculele utriculară și saculară sunt înglobați în membrana otolitică",
+     "adevarat": true
+    },
+    {
+     "nr": 2,
+     "text": "celulele senzoriale vestibulare primesc dendrite din ganglionul spiral Corti",
+     "adevarat": false
+    },
+    {
+     "nr": 3,
+     "text": "otolitele sunt granule de carbonat de calciu și magneziu",
+     "adevarat": true
+    },
+    {
+     "nr": 4,
+     "text": "crestele ampulare se află în utriculă și saculă",
+     "adevarat": false
+    }
+   ]
+  },
+  {
+   "id": "bio01.hard.cs.001",
+   "sectionId": "bio01.greu",
+   "tip": "CS",
+   "marcaj": "hard",
+   "enunt": "Difuziunea facilitată se caracterizează prin aceea că:",
+   "explicatie": "După criteriul cărăușilor, difuziunea facilitată și transportul activ folosesc proteine transportoare; după criteriul energetic, difuziunea facilitată rămâne pasivă (fără ATP, în sensul gradientului). Distractorii atribuie difuziunii facilitate proprietăți reale, dar ale transportului activ sau ale difuziunii simple.",
+   "dificultate": "grea",
+   "sursa": "Celula",
+   "pagina": 9,
+   "raspuns": "C",
+   "optiuni": [
+    {
+     "cheie": "A",
+     "text": "deplasează moleculele împotriva gradientului de concentrație"
+    },
+    {
+     "cheie": "B",
+     "text": "nu necesită proteine transportoare"
+    },
+    {
+     "cheie": "C",
+     "text": "utilizează proteine transportoare, dar se desfășoară fără consum de energie"
+    },
+    {
+     "cheie": "D",
+     "text": "folosește hidroliza directă a ATP-ului"
+    },
+    {
+     "cheie": "E",
+     "text": "reprezintă un tip de transport activ secundar"
+    }
+   ]
+  },
+  {
+   "id": "bio01.hard.cs.002",
+   "sectionId": "bio01.greu",
+   "tip": "CS",
+   "marcaj": "hard",
+   "enunt": "Referitor la țesutul cartilaginos este corectă afirmația:",
+   "explicatie": "Cartilaj hialin: costal, laringial, traheal. Cartilaj elastic: pavilionul urechii, epiglota. Cartilaj fibros: discurile intervertebrale, meniscurile. Tendoanele/aponevrozele și tunica medie a arterelor sunt țesuturi conjunctive (fibros, respectiv elastic), nu cartilaje. Distractorii încrucișează tipul de cartilaj cu localizarea greșită.",
+   "dificultate": "grea",
+   "sursa": "Țesuturile",
+   "pagina": 11,
+   "raspuns": "B",
+   "optiuni": [
+    {
+     "cheie": "A",
+     "text": "cartilajul hialin formează pavilionul urechii și epiglota"
+    },
+    {
+     "cheie": "B",
+     "text": "cartilajul fibros formează discurile intervertebrale și meniscurile articulare"
+    },
+    {
+     "cheie": "C",
+     "text": "cartilajul elastic formează cartilajele costale și traheale"
+    },
+    {
+     "cheie": "D",
+     "text": "cartilajul fibros formează tunica medie a arterelor"
+    },
+    {
+     "cheie": "E",
+     "text": "cartilajul hialin formează tendoanele și aponevrozele"
+    }
+   ]
+  },
+  {
+   "id": "bio01.hard.cs.003",
+   "sectionId": "bio01.greu",
+   "tip": "CS",
+   "marcaj": "hard",
+   "enunt": "Următoarele afirmații despre nucleu sunt corecte, cu excepția:",
+   "explicatie": "Hepatocit — binucleat, fibra musculară striată — polinucleată, hematia adultă — anucleată, raport nucleu/citoplasmă 1/3–1/4: toate corecte. Neuronul are nucleu, dar îi lipsește centrozomul (nu se divide); confuzia «lipsă de centrozom» → «anucleat» este capcana. Excepția este afirmația E.",
+   "dificultate": "grea",
+   "sursa": "Celula",
+   "pagina": 7,
+   "raspuns": "E",
+   "optiuni": [
+    {
+     "cheie": "A",
+     "text": "hepatocitele pot fi binucleate"
+    },
+    {
+     "cheie": "B",
+     "text": "fibra musculară striată este polinucleată"
+    },
+    {
+     "cheie": "C",
+     "text": "hematia adultă este anucleată"
+    },
+    {
+     "cheie": "D",
+     "text": "raportul nucleu/citoplasmă este de 1/3–1/4"
+    },
+    {
+     "cheie": "E",
+     "text": "neuronul este o celulă anucleată"
+    }
+   ]
+  },
+  {
+   "id": "bio01.hard.cg.001",
+   "sectionId": "bio01.greu",
+   "tip": "CG",
+   "marcaj": "hard",
+   "enunt": "Referitor la potențialele membranare sunt adevărate afirmațiile:",
+   "explicatie": "Potențialul de repaus (–65…–85 mV), raportul pompei (2 K+ / 3 Na+) și vârful de +40 mV la neuron sunt corecte. Afirmația 4 atribuie depolarizării ieșirea K+, deși aceasta produce repolarizarea; depolarizarea se datorează intrării Na+. Vectorul {1,2,3} corespunde literei A.",
+   "dificultate": "grea",
+   "sursa": "Celula",
+   "pagina": 9,
+   "raspuns": "A",
+   "optiuni": [
+    {
+     "cheie": "A",
+     "text": "numai soluțiile 1, 2 și 3 sunt corecte"
+    },
+    {
+     "cheie": "B",
+     "text": "numai soluțiile 1 și 3 sunt corecte"
+    },
+    {
+     "cheie": "C",
+     "text": "numai soluțiile 2 și 4 sunt corecte"
+    },
+    {
+     "cheie": "D",
+     "text": "numai soluția 4 este corectă"
+    },
+    {
+     "cheie": "E",
+     "text": "toate cele patru soluții sunt corecte sau sunt false"
+    }
+   ],
+   "afirmatii": [
+    {
+     "nr": 1,
+     "text": "potențialul membranar de repaus are valori între –65 mV și –85 mV",
+     "adevarat": true
+    },
+    {
+     "nr": 2,
+     "text": "pompa de Na+/K+ funcționează într-un raport de 2 K+ introduse la 3 Na+ expulzate",
+     "adevarat": true
+    },
+    {
+     "nr": 3,
+     "text": "în cursul potențialului de acțiune, la neuron, membrana atinge +40 mV",
+     "adevarat": true
+    },
+    {
+     "nr": 4,
+     "text": "panta ascendentă (depolarizarea) a potențialului de acțiune se datorează ieșirii K+ din celulă",
+     "adevarat": false
+    }
+   ]
+  },
+  {
+   "id": "bio01.hard.cg.002",
+   "sectionId": "bio01.greu",
+   "tip": "CG",
+   "marcaj": "hard",
+   "enunt": "Sunt corecte următoarele asocieri epiteliu de acoperire – localizare:",
+   "explicatie": "Corecte sunt asocierile 2 (pavimentos simplu – endoteliu vascular) și 4 (tranziție – uroteliu). Asocierea 1 pune epiteliul de tranziție la bronhiole (care au epiteliu cubic simplu), iar asocierea 3 mută pseudostratificatul cilindric traheal la mucoasa bucală. Vectorul {2,4} corespunde literei C.",
+   "dificultate": "grea",
+   "sursa": "Țesuturile",
+   "pagina": 11,
+   "raspuns": "C",
+   "optiuni": [
+    {
+     "cheie": "A",
+     "text": "numai soluțiile 1, 2 și 3 sunt corecte"
+    },
+    {
+     "cheie": "B",
+     "text": "numai soluțiile 1 și 3 sunt corecte"
+    },
+    {
+     "cheie": "C",
+     "text": "numai soluțiile 2 și 4 sunt corecte"
+    },
+    {
+     "cheie": "D",
+     "text": "numai soluția 4 este corectă"
+    },
+    {
+     "cheie": "E",
+     "text": "toate cele patru soluții sunt corecte sau sunt false"
+    }
+   ],
+   "afirmatii": [
+    {
+     "nr": 1,
+     "text": "epiteliu de tranziție – mucoasa bronhiolelor",
+     "adevarat": false
+    },
+    {
+     "nr": 2,
+     "text": "epiteliu simplu pavimentos – tunica internă a vaselor sangvine și limfatice",
+     "adevarat": true
+    },
+    {
+     "nr": 3,
+     "text": "epiteliu pseudostratificat cilindric – mucoasa bucală",
+     "adevarat": false
+    },
+    {
+     "nr": 4,
+     "text": "epiteliu de tranziție – uroteliul",
+     "adevarat": true
+    }
+   ]
+  },
+  {
+   "id": "bio01.hard.cg.003",
+   "sectionId": "bio01.greu",
+   "tip": "CG",
+   "marcaj": "hard",
+   "enunt": "Traversează membrana celulară prin difuziune simplă (fără proteine transportoare):",
+   "explicatie": "Prin difuziune simplă trec moleculele nepolare/liposolubile (O2, hormoni steroizi) și cele organice polare neîncărcate (CO2, etanol, uree). Glucoza necesită transportor, ionii de sodiu trec prin canale proteice, iar glicoproteinele sunt structurale. Doar afirmația 4 este corectă; vectorul {4} corespunde literei D.",
+   "dificultate": "grea",
+   "sursa": "Celula",
+   "pagina": 9,
+   "raspuns": "D",
+   "optiuni": [
+    {
+     "cheie": "A",
+     "text": "numai soluțiile 1, 2 și 3 sunt corecte"
+    },
+    {
+     "cheie": "B",
+     "text": "numai soluțiile 1 și 3 sunt corecte"
+    },
+    {
+     "cheie": "C",
+     "text": "numai soluțiile 2 și 4 sunt corecte"
+    },
+    {
+     "cheie": "D",
+     "text": "numai soluția 4 este corectă"
+    },
+    {
+     "cheie": "E",
+     "text": "toate cele patru soluții sunt corecte sau sunt false"
+    }
+   ],
+   "afirmatii": [
+    {
+     "nr": 1,
+     "text": "glucoza",
+     "adevarat": false
+    },
+    {
+     "nr": 2,
+     "text": "ionii de sodiu",
+     "adevarat": false
+    },
+    {
+     "nr": 3,
+     "text": "glicoproteinele de pe fața externă a membranei",
+     "adevarat": false
+    },
+    {
+     "nr": 4,
+     "text": "dioxidul de carbon",
+     "adevarat": true
+    }
+   ]
   }
  ]
 }

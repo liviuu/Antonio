@@ -329,6 +329,48 @@ code {
     margin: 0 0 .85rem;
 }
 
+/* ---- Pills (difficulty / hard percentage) ------------------------------ */
+
+.pill {
+    display: inline-flex;
+    align-items: center;
+    padding: .15rem .55rem;
+    border-radius: 999px;
+    font-size: .72rem;
+    font-weight: 700;
+    letter-spacing: .03em;
+    text-transform: uppercase;
+    line-height: 1.4;
+    white-space: nowrap;
+}
+
+/* Difficulty level of a single grila (pill in the quiz header). */
+.pill-dif-easy   { background: #e8f5ee; color: #146c43; }
+.pill-dif-medium { background: #fff3cd; color: #8a6d00; }
+.pill-dif-hard   { background: #fdecee; color: #b02a37; }
+
+/* Share of hard grile in a chapter / section (pill in the list). */
+.pill-hard-pct {
+    background: #fdecee;
+    color: #b02a37;
+    border: 1px solid #f1aeb5;
+}
+
+/* Launch button for a hard (pilot) section: light orange fill so it stands out
+   in the list without needing to be selected. */
+.btn-hard-section {
+    background-color: #fff1e0;
+    border-color: #ffcc80;
+    color: #b35c00;
+}
+
+    .btn-hard-section:hover,
+    .btn-hard-section:focus {
+        background-color: #ffe3c2;
+        border-color: #ffb74d;
+        color: #8a4500;
+    }
+
 /* ---- Explicație -------------------------------------------------------- */
 
 .explicatie {
